@@ -18,4 +18,4 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 - `npm run build` to build final files when you are ready to turn in.
 
 ## Live Site  
-[View the Live Site Here](https://roaring-bombolone-498c85.netlify.app)
+[WDD 231 Personal Project](https://roaring-bombolone-498c85.netlify.app)
