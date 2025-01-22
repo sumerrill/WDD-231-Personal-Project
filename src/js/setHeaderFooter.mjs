@@ -1,9 +1,11 @@
+import { parkInfoTemplate, footerTemplate } from "./templates.mjs";
+
 export default function setHeaderFooter(data) {
     setHeaderInfo(data);
     setFooter(data);
 }
 
-function setHeaderInfo(data) {
+export function setHeaderInfo(data) {
     // Insert data into the disclaimer section
     const disclaimer = document.querySelector(".disclaimer > a");
     disclaimer.href = data.url;
@@ -19,7 +21,7 @@ function setHeaderInfo(data) {
     document.querySelector(".hero-banner__content").innerHTML = parkInfoTemplate(data);
 }
 
-function setFooter(data) {
-    const footerE1 = document.querySelector("#park-footer");
-    footerE1.innerHTML = footerTemplate(data);
-  }
+export function setFooter(data) {
+    const footerEl = document.querySelector(".park-footer");
+    footerEl.innerHTML = footerTemplate(data);
+}
