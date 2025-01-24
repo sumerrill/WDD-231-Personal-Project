@@ -1,105 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yellowstone National Park</title>
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/main.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <p class="disclaimer">
-      This is not a real NPS website. It is an educational exercise. If you
-      landed here by accident, to find the real website visit
-      <a href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a>
+        This is not a real NPS website. It is an educational exercise. If you landed here by accident, to find the real website visit 
+        <a href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a>
     </p>
-    <div class="skip-links" aria-label="short-cut links" role="navigation">
-      <ul>
-        <li>
-          <a href="#global-nav-toggle" aria-label="Skip to global NPS navigation">
-            Skip to global NPS navigation
-          </a>
-        </li>
-        <li>
-          <a href="#local-nav" aria-label="Skip to this park navigation">
-            Skip to this park navigation
-          </a>
-        </li>
-        <li>
-          <a href="#main" aria-label="Skip to the main content">
-            Skip to the main content
-          </a>
-        </li>
-        <li>
-          <a href="#park-footer" aria-label="Skip to this park information section">
-            Skip to this park information section
-          </a>
-        </li>
-      </ul>
-    </div>
-    <header>
-      <section class="global-header">
+
+    <header class="global-header">
         <a href="index.html" class="site-title">
-          <span class="logo" role="presentation"></span>
-          <span>National Park Service</span>
+            <span class="logo" role="presentation"></span>
+            <span>National Park Service</span>
         </a>
         <div class="global-header__right">
-          <a class="search-icon" href="#park-footer">
-            <svg class="icon">
-              <use xlink:href="/images/sprite.symbol.svg#search"></use>
-            </svg>
-            <span class="visually-hidden">Search</span>
-          </a>
-          <button id="global-nav-toggle">
-            <svg class="icon">
-              <use xlink:href="/images/sprite.symbol.svg#menu"></use>
-            </svg>
-            <span class="visually-hidden">Open Menu</span>
-          </button>
+            <a class="search-icon" href="#park-footer">
+                <svg class="icon">
+                    <use xlink:href="/images/sprite.symbol.svg#search"></use>
+                </svg>
+                <span class="visually-hidden">Search</span>
+            </a>
+            <button id="global-nav-toggle">
+                <svg class="icon">
+                    <use xlink:href="/images/sprite.symbol.svg#menu"></use>
+                </svg>
+                <span class="visually-hidden">Open Menu</span>
+            </button>
         </div>
-        <nav class="global-nav">
-          <h2 class="global-nav__section-heading">Explore this Park</h2>
-          <ul class="global-nav__list">
-            <li>
-              <div class="global-nav__split-button">
-                <a href="#">Plan Your Visit</a>
-                <button class="global-nav__split-button__toggle">
-                  <span class="visually-hidden">Toggle submenu for Plan Your Visit</span>
-                  <svg class="icon" role="presentation" focusable="false">
-                    <use xlink:href="/images/sprite.symbol.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section id="park-header">
-        <a href="#">
-          <span>Info</span>
-          <svg class="icon" role="presentation" focusable="false">
-            <use xlink:href="/images/sprite.symbol.svg#info"></use>
-          </svg>
-        </a>
-        <svg class="icon" role="presentation" focusable="false">
-          <use xlink:href="/images/sprite.symbol.svg#alert"></use>
-        </svg>
-      </section>
     </header>
+
     <section class="hero-banner">
-      <img src="path-to-placeholder-image.jpg" alt="Yellowstone National Park" />
-      <div class="hero-banner__content">
-        <h1>Yellowstone National Park</h1>
-        <p>ID, MT, WY</p>
-      </div>
+        <img src="https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" alt="Yellowstone National Park">
+        <div class="hero-banner__content">
+            <h1>Yellowstone National Park</h1>
+            <p>National Park</p>
+            <p>ID, MT, WY</p>
+        </div>
     </section>
-    <main id="main">
-      <section class="intro">
-        <h1>Yellowstone National Park</h1>
-        <p>Yellowstone National Park is famous for its geothermal features and wildlife.</p>
-      </section>
-      <section class="info"></section>
+
+    <main>
+        <section class="intro">
+            <h1>Yellowstone National Park</h1>
+            <p>On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.</p>
+        </section>
+
+        <section class="info">
+            <div class="info-card">
+                <img src="conditions.jpg" alt="Current Conditions">
+                <h3>Current Conditions ›</h3>
+                <p>See what conditions to expect in the park before leaving on your trip!</p>
+            </div>
+            <div class="info-card">
+                <img src="fees.jpg" alt="Fees and Passes">
+                <h3>Fees and Passes ›</h3>
+                <p>Learn about the fees and passes that are available.</p>
+            </div>
+            <div class="info-card">
+                <img src="visitor.jpg" alt="Visitor Centers">
+                <h3>Visitor Centers ›</h3>
+                <p>Learn about the visitor centers in the park.</p>
+            </div>
+        </section>
     </main>
-    <footer class="park-footer"></footer>
-  </body>
+
+    <footer class="park-footer">
+        <section class="contact">
+            <h3>Contact Info</h3>
+            <h4>Mailing Address:</h4>
+            <p>PO Box 168, Yellowstone National Park, WY 82190-0168</p>
+            <h4>Phone:</h4>
+            <p>307-344-7381</p>
+        </section>
+    </footer>
+</body>
 </html>
