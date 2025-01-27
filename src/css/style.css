@@ -1,4 +1,4 @@
-:root {
+:root { 
   --black: #000;
   --white: #fff;
   --grey: #ccc;
@@ -18,15 +18,16 @@ body {
   color: var(--text-color);
   background-color: var(--body-bg);
   margin: 0;
+  text-align: center;
 }
 
 a {
-  color: var(--primary);
+  color: var(--white);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--primary-dark);
+  color: var(--grey);
 }
 
 .disclaimer {
@@ -103,30 +104,53 @@ a:hover {
   padding: 40px 20px;
 }
 
+/* Center cards properly and add spacing */
 .info {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
+  justify-content: space-between;  /* Even spacing between cards */
+  align-items: flex-start;
+  padding: 20px 10%;
+  gap: 20px; /* Add some spacing between the cards */
 }
 
 .info-card {
   background-color: var(--white);
-  padding: 15px;
-  max-width: 300px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;  /* Ensure equal width for all cards */
+  text-align: left;
+  box-shadow: none; /* Remove shadow */
+  border-radius: 0; /* Remove rounded corners */
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
 }
 
 .info-card img {
-  width: 100%;
-  border-bottom: 5px solid var(--primary);
+  width: 100%;  /* Ensure images fill the card width */
+  height: 200px;  /* Set fixed height to make them uniform */
+  object-fit: cover;  /* Ensure the image maintains aspect ratio and covers the area */
+  border-bottom: none;  /* Remove unnecessary border */
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: var(--text-color);
+}
+
+.info-card p {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  color: var(--text-color);
 }
 
 .park-footer {
   background: url('../images/topo-pattern.png') repeat;
-  padding: 20px;
-  text-align: center;
+  padding: 40px 10%;
+  text-align: left;
+  background-color:beige;  /* Grey background */
+  width: 100%;  /* Full width */
 }
 
 .contact h3 {
@@ -136,3 +160,4 @@ a:hover {
 .contact p {
   margin: 5px 0;
 }
+
